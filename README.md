@@ -1,6 +1,18 @@
 <h1 align="center"><img src="https://raw.githubusercontent.com/Champii/Champii/develop/medias/github-header-image.png">
 </h1>
-<h3 align="center">I code whenever I can, but also the rest of the time.</h3>
+
+<h3 align="center">
+    I code whenever I can, but also the rest of the time.
+</h3>
+
+<div align="center">
+
+![lol](https://i.imgur.com/CzuPg99.gif)
+
+    Welcome
+  
+</div>
+
 <p align="center"> <img src="https://komarev.com/ghpvc/?username=champii&label=Profile%20views&color=faab00&style=flat" alt="champii" /> </p>
 
 <div align="center">
