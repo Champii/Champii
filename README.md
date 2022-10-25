@@ -49,6 +49,12 @@
 [![Sparkline](https://stars.medv.io/Champii/badges.svg)](https://stars.medv.io/Naereen/badges)
 
 <!--START_SECTION:activity-->
+1. 🎉 Merged PR [#1](https://github.com/Champii/Champii/pull/1) in [Champii/Champii](https://github.com/Champii/Champii)
+2. 💪 Opened PR [#1](https://github.com/Champii/Champii/pull/1) in [Champii/Champii](https://github.com/Champii/Champii)
+3. ❗️ Opened issue [#3](https://github.com/Champii/Comet/issues/3) in [Champii/Comet](https://github.com/Champii/Comet)
+4. ❗️ Closed issue [#1](https://github.com/Champii/Comet/issues/1) in [Champii/Comet](https://github.com/Champii/Comet)
+5. ❗️ Opened issue [#2](https://github.com/Champii/Comet/issues/2) in [Champii/Comet](https://github.com/Champii/Comet)
+<!--END_SECTION:activity-->
 
 <!--
 **Champii/Champii** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
