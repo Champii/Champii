@@ -80,11 +80,11 @@
 
  
 <!--START_SECTION:activity-->
-1. 🎉 Merged PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
-2. 💪 Opened PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
-3. 🎉 Merged PR [#3](https://github.com/Champii/Champii/pull/3) in [Champii/Champii](https://github.com/Champii/Champii)
-4. 💪 Opened PR [#3](https://github.com/Champii/Champii/pull/3) in [Champii/Champii](https://github.com/Champii/Champii)
-5. 🎉 Merged PR [#2](https://github.com/Champii/Champii/pull/2) in [Champii/Champii](https://github.com/Champii/Champii)
+1. 🎉 Merged PR [#4](https://github.com/Champii/Comet/pull/4) in [Champii/Comet](https://github.com/Champii/Comet)
+2. 💪 Opened PR [#4](https://github.com/Champii/Comet/pull/4) in [Champii/Comet](https://github.com/Champii/Comet)
+3. 🎉 Merged PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
+4. 💪 Opened PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
+5. 🎉 Merged PR [#3](https://github.com/Champii/Champii/pull/3) in [Champii/Champii](https://github.com/Champii/Champii)
 <!--END_SECTION:activity-->
 
 <!--
