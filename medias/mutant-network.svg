@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Mutant — mutable data, distributed storage</title>
+  <desc id="description">An abstract illustration of a file divided into chunks and connected to peers in a decentralized storage network. The drawing is conceptual, not a live network map.</desc>
+  <defs>
+    <linearGradient id="background" x2="960" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171D25"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="220" rx="12" fill="url(#background)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="36" y="65" fill="#F0F3F6" font-size="32" font-weight="600">Mutable data.</text>
+    <text x="36" y="107" fill="#D6A67B" font-size="32">Distributed storage.</text>
+    <text x="36" y="168" fill="#A5ABB4" font-size="22">Chunk · encrypt · resume</text>
+  </g>
+  <g stroke="#D6A67B" stroke-width="1.5" stroke-opacity=".25">
+    <path d="M708 43L825 54L898 115L807 179L680 170L708 43L898 115L680 170L825 54L807 179L708 43"/>
+  </g>
+  <g stroke="#D6A67B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M583 109H628M621 102L628 109L621 116"/>
+    <path d="M644 109L708 43M644 109L680 170M644 109L898 115" stroke-dasharray="4 7" stroke-opacity=".6"/>
+    <path d="M500 61H541L563 83V157H500Z" fill="#1D252E"/>
+    <path d="M541 61V83H563"/>
+    <rect x="513" y="98" width="14" height="14" rx="2" fill="#D6A67B" fill-opacity=".5"/>
+    <rect x="536" y="98" width="14" height="14" rx="2" fill="#D6A67B" fill-opacity=".2"/>
+    <rect x="513" y="122" width="14" height="14" rx="2" fill="#D6A67B" fill-opacity=".2"/>
+    <rect x="536" y="122" width="14" height="14" rx="2" fill="#D6A67B" fill-opacity=".5"/>
+  </g>
+  <g fill="#1D252E" stroke="#D6A67B" stroke-width="2">
+    <circle cx="708" cy="43" r="13"/>
+    <circle cx="825" cy="54" r="10"/>
+    <circle cx="898" cy="115" r="15"/>
+    <circle cx="807" cy="179" r="11"/>
+    <circle cx="680" cy="170" r="15"/>
+  </g>
+  <g fill="#D6A67B">
+    <circle cx="708" cy="43" r="4"/>
+    <circle cx="898" cy="115" r="5"/>
+    <circle cx="680" cy="170" r="5"/>
+    <circle cx="644" cy="109" r="4"/>
+  </g>
+</svg>

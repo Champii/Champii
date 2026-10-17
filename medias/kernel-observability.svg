@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="220" viewBox="0 0 960 220" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Asterinas — from scheduler to userspace</title>
+  <desc id="description">A processor connected to three layers: scheduler statistics, the proc load-average interface, and userspace. This illustrates the path from internal kernel state to observable system information.</desc>
+  <defs>
+    <linearGradient id="background" x2="960" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171D25"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="220" rx="12" fill="url(#background)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="36" y="65" fill="#F0F3F6" font-size="32" font-weight="600">From scheduler</text>
+    <text x="36" y="107" fill="#D6A67B" font-size="32">to userspace.</text>
+    <text x="36" y="168" fill="#A5ABB4" font-size="22">Making kernel state visible</text>
+  </g>
+  <g stroke="#D6A67B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="493" y="72" width="76" height="76" rx="8" fill="#D6A67B" fill-opacity=".06"/>
+    <rect x="511" y="90" width="40" height="40" rx="4" stroke-opacity=".5"/>
+    <path d="M507 61V72M523 61V72M539 61V72M555 61V72M507 148V159M523 148V159M539 148V159M555 148V159M482 86H493M482 102H493M482 118H493M482 134H493M569 86H580M569 102H580M569 118H580M569 134H580"/>
+    <path d="M581 110H610V173H648M640 165L648 173L640 181" stroke-opacity=".6"/>
+    <path d="M786 145V133M780 139L786 133L792 139M786 83V71M780 77L786 71L792 77"/>
+  </g>
+  <g stroke="#D6A67B">
+    <rect x="656" y="26" width="268" height="44" rx="6" stroke-opacity=".25"/>
+    <rect x="656" y="88" width="268" height="44" rx="6" fill="#D6A67B" fill-opacity=".1" stroke-opacity=".7"/>
+    <rect x="656" y="150" width="268" height="44" rx="6" stroke-opacity=".25"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle" font-size="23">
+    <text x="790" y="56" fill="#A5ABB4">Userspace</text>
+    <text x="790" y="118" fill="#D6A67B" font-family="monospace">/proc/loadavg</text>
+    <text x="790" y="180" fill="#F0F3F6">Scheduler statistics</text>
+  </g>
+</svg>

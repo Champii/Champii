@@ -1,39 +1,65 @@
-<img src="medias/profile-header.svg" alt="Champii — Functional ideas. Native foundations." width="100%" />
+<img src="medias/profile-header.svg" alt="Champii — To dev, or not to dev? No question." width="100%" />
 
-I build programming languages and systems software in **Rust**. My work explores how expressive abstractions, explicit ownership, and native execution can fit together — from a language and its compiler to decentralized storage and developer tools.
+I build **programming languages** and **systems software in Rust**. My work explores how expressive abstractions, explicit ownership, and native execution can fit together — from a language and its compiler to decentralized storage and developer tools.
 
 [Rock](https://github.com/rock-lang-org/rock) · [Language book](https://rock-lang-org.github.io/Rock/) · [Contact](mailto:contact@champii.io)
 
 ## Rock — functional programming, native foundations
 
-**My main focus: building a language and the ecosystem around it.**
+My main focus: building a language and the ecosystem around it.
 
-[Rock](https://github.com/rock-lang-org/rock) is an experimental, natively compiled language with a functional style and explicit ownership. Written in Rust and targeting LLVM, it brings together type inference, pattern matching, higher-kinded types, and deterministic resource cleanup. Its syntax draws from LiveScript, Haskell, and Rust: concise functions, readable pipelines, and abstractions that compose.
+[Rock](https://github.com/rock-lang-org/rock) is an experimental, natively compiled language with a **functional style** and **explicit ownership**. Written in Rust and targeting LLVM, it brings together type inference, pattern matching, **higher-kinded types**, and deterministic resource cleanup. Its syntax draws from LiveScript, Haskell, and Rust: concise functions, readable pipelines, and abstractions that compose.
 
-The ambition is to make functional programming feel natural in systems code: work with functions and containers at a high level while keeping borrowing, mutation, and resource lifetimes explicit. Traits such as `Functor`, `Monad`, and `Traversable` let different containers share operations; `do` notation makes dependent, fallible steps read as a flat sequence.
+The ambition is to make **functional programming feel natural in systems code**: work with functions and containers at a high level while keeping borrowing, mutation, and resource lifetimes explicit. Traits such as `Functor`, `Monad`, and `Traversable` let different containers share operations; `do` notation makes dependent, fallible steps read as a flat sequence.
+
+### A small example: one operation, different containers
+
+<img src="medias/rock-functor.svg" alt="One Functor operation across Option and Vec: mapping double turns Some(21) into Some(42) and a vector of 1, 2, 3 into 2, 4, 6. None stays unchanged without calling double. Mapping consumes its input container." width="100%" />
 
 ```haskell
-half_even = value ->
-    if value % 2 == 0
-    then Option::Some value / 2
-    else Option::None
+double = value -> value * 2
 
 main = !->
-    Option::Some 84
-        >>= half_even
-        >>= half_even
-        |> (.println!)  // Some(21)
+    mut values = Vec::new!
+    for value in [1, 2, 3]
+        values.push value
+
+    Option::Some 21
+        <&> double
+        |> (.println!)  // Some(42)
+
+    values
+        <&> double
+        |> (.println!)  // [2, 4, 6]
+
+    Option::None
+        <&> double
+        |> (.println!)  // None
 ```
 
 ### What I'm building now
 
-- **A more expressive type system.** Connecting higher-kinded abstractions, ownership-aware closures, and trait inference so ordinary programs need fewer annotations; exploring scoped dynamic dispatch and existential packages on a dedicated development branch.
-- **A principled compiler–library boundary.** Moving operator meaning and primitive arithmetic policy into the standard library, backed by explicit compiler intrinsics; extending UTF-8 text handling and generic, short-circuiting traversal.
-- **A usable language toolchain.** Developing `rockup`, the project CLI, language server, editor integrations, and the language book alongside the compiler, with reusable compiled dependency artifacts.
+#### A more expressive type system
+
+Connecting higher-kinded abstractions, **ownership-aware closures**, and **trait inference** so ordinary programs need fewer annotations; exploring scoped dynamic dispatch and existential packages on a dedicated development branch.
+
+#### A principled compiler–library boundary
+
+Moving **operator meaning and primitive arithmetic policy** into the standard library, backed by explicit compiler intrinsics; extending **UTF-8 text handling** and generic, short-circuiting traversal.
+
+#### A usable language toolchain
+
+Developing `rockup`, the project CLI, **language server**, editor integrations, and the language book alongside the compiler, with **reusable compiled dependency artifacts**.
 
 ### The hard problems
 
-The challenge is making these features work **together**: preserving borrowing and cleanup through closures and erased types, keeping inference predictable across generic trait calls, and carrying the same semantics across separately compiled dependencies. Compiler correctness, useful diagnostics, and realistic library programs are central to that work.
+The challenge is making these features work together:
+
+- **Ownership across abstractions** — preserving borrowing and cleanup through closures and erased types.
+- **Predictable inference** — keeping generic trait calls understandable without excessive annotations.
+- **Consistent semantics** — carrying the same guarantees across separately compiled dependencies.
+
+That makes **compiler correctness**, **useful diagnostics**, and realistic library programs central to the work.
 
 Rock is still experimental. The published release and active development branches move at different speeds; the goal is a coherent, usable language, and the current work is about earning that reliability.
 
@@ -43,15 +69,25 @@ Rock is still experimental. The published release and active development branche
 
 ### [Rock ecosystem](https://github.com/rock-lang-org) · Taking the language beyond the compiler
 
-I'm building the surrounding tools and libraries that let Rock be used for real programs. [rock_http](https://github.com/rock-lang-org/rock_http) is a blocking HTTP/1.1 server library written in Rock, with bounded request parsing, response framing, and a thread-per-connection model built on safe standard-library APIs. It gives the language a concrete systems workload. [rock.nvim](https://github.com/rock-lang-org/rock.nvim), [vscode-rock](https://github.com/rock-lang-org/vscode-rock), and [tree-sitter-rock](https://github.com/rock-lang-org/tree-sitter-rock) bring the editing experience along with it.
+I'm building the surrounding tools and libraries that let Rock be used for real programs. [rock_http](https://github.com/rock-lang-org/rock_http) is a **blocking HTTP/1.1 server library written in Rock**, with bounded request parsing, response framing, and a thread-per-connection model built on safe standard-library APIs. It gives the language a concrete systems workload.
+
+[rock.nvim](https://github.com/rock-lang-org/rock.nvim), [vscode-rock](https://github.com/rock-lang-org/vscode-rock), and [tree-sitter-rock](https://github.com/rock-lang-org/tree-sitter-rock) bring the **editing experience** along with it.
 
 ### [Mutant](https://github.com/champii/Mutant) · Mutable storage on a decentralized network
 
-A Rust storage system that turns the Autonomi network into a mutable key–value interface. Mutant combines encrypted private storage and public sharing with chunked, resumable uploads, storage-pad reuse, and synchronization. A persistent daemon manages network operations and background tasks, exposed through an async Rust API, a CLI, and a web workspace with file viewing, editing, and media streaming. The underlying problem: making distributed storage practical when transfers are interrupted, data changes, and network operations take time.
+<img src="medias/mutant-network.svg" alt="Conceptual illustration of Mutant: data is split into chunks and stored across a peer-to-peer network, with encryption and resumable transfers." width="100%" />
+
+A Rust storage system that turns the Autonomi network into a **mutable key–value interface**. Mutant combines encrypted private storage and public sharing with **chunked, resumable uploads**, storage-pad reuse, and synchronization.
+
+A persistent daemon manages network operations and background tasks, exposed through an async Rust API, a CLI, and a web workspace with file viewing, editing, and media streaming. The underlying problem: making distributed storage practical when transfers are interrupted, data changes, and network operations take time.
 
 ### [Asterinas](https://github.com/asterinas/asterinas) · Kernel development in Rust
 
-My kernel work includes contributing load-average accounting and the corresponding `/proc/loadavg` interface to Asterinas, a Rust operating-system kernel with a Linux-compatible ABI. The implementation connects scheduler statistics to the proc filesystem, using fixed-point arithmetic and lazy calculation of load averages. It's systems work at a different layer: turning internal scheduling state into useful information for userspace while respecting kernel constraints. [View the contribution →](https://github.com/asterinas/asterinas/commit/4701eaf0cb2dcf8f8bd668e4d9ef6f1d64d6fca3)
+<img src="medias/kernel-observability.svg" alt="Kernel observability: scheduler statistics feed the proc load-average interface, making kernel state visible to userspace." width="100%" />
+
+My kernel work includes contributing **load-average accounting** and the corresponding `/proc/loadavg` interface to Asterinas, a Rust operating-system kernel with a **Linux-compatible ABI**. The implementation connects scheduler statistics to the proc filesystem, using fixed-point arithmetic and lazy calculation of load averages.
+
+It's systems work at a different layer: turning internal scheduling state into useful information for userspace while respecting kernel constraints. [View the contribution →](https://github.com/asterinas/asterinas/commit/4701eaf0cb2dcf8f8bd668e4d9ef6f1d64d6fca3)
 
 Earlier explorations include [Comet](https://github.com/champii/Comet), a reactive, isomorphic full-stack framework for Rust, and [reactive-postgres-rs](https://github.com/champii/reactive-postgres-rs), a reactive layer over PostgreSQL.
 

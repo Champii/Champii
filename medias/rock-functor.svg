@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="456" viewBox="0 0 960 456" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">One operation. Different containers.</title>
+  <desc id="description">A worked illustration of Rock's higher-kinded Functor abstraction. The same map operator applies double to the contents of Option and Vec while preserving the container. Some(21) becomes Some(42), and [1, 2, 3] becomes [2, 4, 6]. None bypasses the mapper. Mapping consumes the input. Values are shown schematically, not as complete Rock programs.</desc>
+  <defs>
+    <linearGradient id="background" x2="960" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171D25"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="456" rx="12" fill="url(#background)"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="32" y="49" fill="#F0F3F6" font-size="30" font-weight="600">One operation. Different containers.</text>
+    <text x="32" y="85" fill="#A5ABB4" font-size="21">Higher-kinded types let the abstraction range over the container itself.</text>
+  </g>
+  <rect x="32" y="108" width="896" height="49" rx="6" fill="#D6A67B" fill-opacity=".07"/>
+  <text x="51" y="140" fill="#F0F3F6" font-family="monospace" font-size="23">double = value <tspan fill="#D6A67B">-&gt;</tspan> value * 2</text>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="17" fill="#A5ABB4" letter-spacing="1.5">
+    <text x="32" y="193">CONTAINER</text>
+    <text x="207" y="193">INPUT</text>
+    <text x="684" y="193">OUTPUT</text>
+  </g>
+  <g stroke="#D6A67B" stroke-opacity=".13">
+    <path d="M32 271H928"/>
+  </g>
+  <rect x="434" y="209" width="180" height="127" rx="8" fill="#D6A67B" fill-opacity=".06" stroke="#D6A67B" stroke-opacity=".5"/>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <text x="524" y="239" fill="#D6A67B" font-size="21">Functor</text>
+    <text x="524" y="278" fill="#F0F3F6" font-family="monospace" font-size="24">&lt;&amp;&gt; double</text>
+    <text x="524" y="315" fill="#A5ABB4" font-size="19">shared contract</text>
+  </g>
+  <g font-family="monospace" font-size="24">
+    <g fill="#D6A67B">
+      <text x="32" y="247">Option</text>
+      <text x="32" y="321">Vec</text>
+    </g>
+    <g fill="#F0F3F6">
+      <text x="196" y="247">Some(<tspan fill="#D6A67B">21</tspan>)</text>
+      <text x="196" y="321">[<tspan fill="#D6A67B">1, 2, 3</tspan>]</text>
+      <text x="684" y="247">Some(<tspan fill="#D6A67B">42</tspan>)</text>
+      <text x="684" y="321">[<tspan fill="#D6A67B">2, 4, 6</tspan>]</text>
+    </g>
+  </g>
+  <g stroke="#D6A67B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M366 239H418M411 232L418 239L411 246M630 239H666M659 232L666 239L659 246"/>
+    <path d="M366 313H418M411 306L418 313L411 320M630 313H666M659 306L666 313L659 320"/>
+  </g>
+  <path d="M32 357H928" stroke="#D6A67B" stroke-opacity=".25"/>
+  <g font-family="Arial, Helvetica, sans-serif" font-size="21">
+    <text x="32" y="390" fill="#F0F3F6">None → None</text>
+    <text x="493" y="390" fill="#A5ABB4">No value to map: double is not called.</text>
+    <text x="32" y="430" fill="#A5ABB4" font-size="19">Mapping consumes its input while preserving the kind of container.</text>
+  </g>
+</svg>

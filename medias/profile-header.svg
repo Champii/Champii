@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-labelledby="title description">
-  <title id="title">Champii — Functional ideas. Native foundations.</title>
+  <title id="title">Champii — To dev, or not to dev? No question.</title>
   <desc id="description">A charcoal and copper banner with a geometric rock illustration. Programming languages, systems, and open source.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
@@ -15,7 +15,7 @@
   <path d="M48 55H84" stroke="#D6A67B" stroke-width="3"/>
   <text x="99" y="61" fill="#A5ABB4" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">LANGUAGES / SYSTEMS / OPEN SOURCE</text>
   <text x="46" y="140" fill="#F0F3F6" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Champii</text>
-  <text x="48" y="195" fill="#D6A67B" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="-.4">Functional ideas. Native foundations.</text>
+  <text x="48" y="195" fill="#D6A67B" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="-.4">To dev, or not to dev? No question.</text>
   <text x="49" y="252" fill="#A5ABB4" font-family="Arial, Helvetica, sans-serif" font-size="16">Building Rock and the tools around it.</text>
   <g stroke="#D6A67B" stroke-opacity=".12">
     <path d="M817 0V300M897 0V300M977 0V300M1057 0V300M1137 0V300"/>
