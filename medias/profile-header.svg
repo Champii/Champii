@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="300" viewBox="0 0 1200 300" fill="none" role="img" aria-labelledby="title description">
+  <title id="title">Champii — Functional ideas. Native foundations.</title>
+  <desc id="description">A charcoal and copper banner with a geometric rock illustration. Programming languages, systems, and open source.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1200" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#171D25"/>
+      <stop offset="1" stop-color="#0D1117"/>
+    </linearGradient>
+    <linearGradient id="stone" x1="923" y1="51" x2="1099" y2="253" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#D6A67B"/>
+      <stop offset="1" stop-color="#896346"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="300" rx="12" fill="url(#background)"/>
+  <path d="M48 55H84" stroke="#D6A67B" stroke-width="3"/>
+  <text x="99" y="61" fill="#A5ABB4" font-family="Arial, Helvetica, sans-serif" font-size="14" letter-spacing="3">LANGUAGES / SYSTEMS / OPEN SOURCE</text>
+  <text x="46" y="140" fill="#F0F3F6" font-family="Arial, Helvetica, sans-serif" font-size="68" font-weight="700" letter-spacing="-2">Champii</text>
+  <text x="48" y="195" fill="#D6A67B" font-family="Arial, Helvetica, sans-serif" font-size="30" letter-spacing="-.4">Functional ideas. Native foundations.</text>
+  <text x="49" y="252" fill="#A5ABB4" font-family="Arial, Helvetica, sans-serif" font-size="16">Building Rock and the tools around it.</text>
+  <g stroke="#D6A67B" stroke-opacity=".12">
+    <path d="M817 0V300M897 0V300M977 0V300M1057 0V300M1137 0V300"/>
+    <path d="M785 70H1200M785 150H1200M785 230H1200"/>
+  </g>
+  <path d="M935 60L1037 42L1113 119L1080 220L975 253L897 177Z" fill="#20252B" stroke="#D6A67B" stroke-opacity=".6"/>
+  <path d="M935 60L1004 137L1037 42Z" fill="url(#stone)" fill-opacity=".8"/>
+  <path d="M1037 42L1004 137L1113 119Z" fill="#D6A67B" fill-opacity=".22"/>
+  <path d="M1113 119L1004 137L1080 220Z" fill="#D6A67B" fill-opacity=".4"/>
+  <path d="M1080 220L1004 137L975 253Z" fill="#D6A67B" fill-opacity=".13"/>
+  <path d="M975 253L1004 137L897 177Z" fill="#D6A67B" fill-opacity=".27"/>
+  <path d="M897 177L1004 137L935 60Z" fill="#D6A67B" fill-opacity=".08"/>
+  <g stroke="#D6A67B" stroke-opacity=".45">
+    <path d="M935 60L1004 137L1037 42M1113 119L1004 137L1080 220M975 253L1004 137L897 177"/>
+  </g>
+  <circle cx="1004" cy="137" r="3" fill="#E4BD99"/>
+</svg>

@@ -1,79 +1,73 @@
-<h1 align="center"><img src="https://raw.githubusercontent.com/Champii/Champii/develop/medias/github-header-image.png">
-</h1>
+<img src="medias/profile-header.svg" alt="Champii — Functional ideas. Native foundations." width="100%" />
 
-<h3 align="center">
-    I code whenever I can, but also the rest of the time.
-</h3>
+I build programming languages and systems software in **Rust**. My work explores how expressive abstractions, explicit ownership, and native execution can fit together — from a language and its compiler to decentralized storage and developer tools.
 
-<div align="center">
+[Rock](https://github.com/rock-lang-org/rock) · [Language book](https://rock-lang-org.github.io/Rock/) · [Contact](mailto:contact@champii.io)
 
-![lol](https://i.imgur.com/CzuPg99.gif)
+## Rock — functional programming, native foundations
 
-    Welcome in my <hell>heaven</hell>
-  
-</div>
+**My main focus: building a language and the ecosystem around it.**
 
-<p align="center"> <img src="https://komarev.com/ghpvc/?username=champii&label=Profile%20views&color=faab00&style=flat" alt="champii" /> </p>
+[Rock](https://github.com/rock-lang-org/rock) is an experimental, natively compiled language with a functional style and explicit ownership. Written in Rust and targeting LLVM, it brings together type inference, pattern matching, higher-kinded types, and deterministic resource cleanup. Its syntax draws from LiveScript, Haskell, and Rust: concise functions, readable pipelines, and abstractions that compose.
 
-<div align="center">
+The ambition is to make functional programming feel natural in systems code: work with functions and containers at a high level while keeping borrowing, mutation, and resource lifetimes explicit. Traits such as `Functor`, `Monad`, and `Traversable` let different containers share operations; `do` notation makes dependent, fallible steps read as a flat sequence.
 
-[![Vim](https://img.shields.io/badge/--019733?logo=vim)](https://www.vim.org/)
-[![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
-![Rust](https://img.shields.io/badge/rust-%23000000.svg?style=for-the-badge&logo=rust&logoColor=white)
-![Magic](https://img.shields.io/badge/Made%20with-Magic-orange?style=for-the-badge&logo=data:image/svg%2bxml;base64,PHN2ZyBpZD0iQ2FwYV8xIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCA1MTIgNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHdpZHRoPSI1MTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGc+PHBhdGggZD0ibTM5NS44MiAxODIuNjE2LTE4OC43MiAxODguNzItMTIuOTEgMS43Mi05LjM1IDIwLjU0LTM0LjMxIDM0LjMxLTExLjAxLS43My0xMS4yNSAyMi45OS01Ni40OCA1Ni40OGMtMi45MyAyLjkzLTYuNzcgNC4zOS0xMC42MSA0LjM5cy03LjY4LTEuNDYtMTAuNjEtNC4zOWwtMjIuNjItMjIuNjJoLS4wMWwtMjIuNjItMjIuNjNjLTUuODYtNS44Ni01Ljg2LTE1LjM2IDAtMjEuMjJsNzcuNjMtNzcuNjMgMTYuNi03LjAzIDUuNjYtMTUuMjMgMzQuMzEtMzQuMzEgMTQuODQtNC45MiA3LjQyLTE3LjM0IDE2Ny41Ny0xNjcuNTcgMzMuMjQgMzMuMjR6IiBmaWxsPSIjZjY2Ii8+PHBhdGggZD0ibTM5NS44MiAxMTYuMTQ2djY2LjQ3bC0xODguNzIgMTg4LjcyLTEyLjkxIDEuNzItOS4zNSAyMC41NC0zNC4zMSAzNC4zMS0xMS4wMS0uNzMtMTEuMjUgMjIuOTktNTYuNDggNTYuNDhjLTIuOTMgMi45My02Ljc3IDQuMzktMTAuNjEgNC4zOXMtNy42OC0xLjQ2LTEwLjYxLTQuMzlsLTIyLjYyLTIyLjYyIDMzNC42NC0zMzQuNjR6IiBmaWxsPSIjZTYyZTZiIi8+PHBhdGggZD0ibTUwNi42MSAyMDkuMDA2LTY5LjE0LTY5LjEzIDQzLjA1LTg4LjM4YzIuOC01Ljc1IDEuNjUtMTIuNjUtMi44OC0xNy4xNy00LjUyLTQuNTMtMTEuNDItNS42OC0xNy4xNy0yLjg4bC04OC4zOCA0My4wNS02OS4xMy02OS4xNGMtNC4zNS00LjM1LTEwLjkyLTUuNi0xNi41Ni0zLjE2LTUuNjUgMi40NS05LjIzIDguMDktOS4wNCAxNC4yNGwyLjg2IDkwLjQ1LTg1LjM3IDU3LjgzYy00LjkxIDMuMzItNy40IDkuMjItNi4zNiAxNS4wNCAxLjA0IDUuODMgNS40IDEwLjUxIDExLjE1IDExLjk0bDk2LjYyIDI0LjAxIDI0LjAxIDk2LjYyYzEuNDMgNS43NSA2LjExIDEwLjExIDExLjk0IDExLjE1Ljg3LjE2IDEuNzUuMjMgMi42Mi4yMyA0LjkyIDAgOS42LTIuNDIgMTIuNDItNi41OWw1Ny44My04NS4zNyA5MC40NSAyLjg2YzYuMTQuMTkgMTEuNzktMy4zOSAxNC4yNC05LjA0IDIuNDQtNS42NCAxLjE5LTEyLjIxLTMuMTYtMTYuNTZ6IiBmaWxsPSIjZmFiZTJjIi8+PHBhdGggZD0ibTI5Ni4yNiAyMTUuNzA2IDI0LjAxIDk2LjYyYzEuNDMgNS43NSA2LjExIDEwLjExIDExLjk0IDExLjE1Ljg3LjE2IDEuNzUuMjMgMi42Mi4yMyA0LjkyIDAgOS42LTIuNDIgMTIuNDItNi41OWw1Ny44My04NS4zNyA5MC40NSAyLjg2YzYuMTQuMTkgMTEuNzktMy4zOSAxNC4yNC05LjA0IDIuNDQtNS42NCAxLjE5LTEyLjIxLTMuMTYtMTYuNTZsLTY5LjE0LTY5LjEzIDQzLjA1LTg4LjM4YzIuOC01Ljc1IDEuNjUtMTIuNjUtMi44OC0xNy4xN3oiIGZpbGw9IiNmZDkwMjUiLz48cGF0aCBkPSJtNDY1IDQxNi45NjZjLTI1LjkyIDAtNDcgMjEuMDgtNDcgNDdzMjEuMDggNDcgNDcgNDcgNDctMjEuMDggNDctNDctMjEuMDgtNDctNDctNDd6IiBmaWxsPSIjZmFiZTJjIi8+PHBhdGggZD0ibTEwNCAyOC45NjZoLTEzdi0xM2MwLTguMjg0LTYuNzE2LTE1LTE1LTE1cy0xNSA2LjcxNi0xNSAxNXYxM2gtMTNjLTguMjg0IDAtMTUgNi43MTYtMTUgMTVzNi43MTYgMTUgMTUgMTVoMTN2MTNjMCA4LjI4NCA2LjcxNiAxNSAxNSAxNXMxNS02LjcxNiAxNS0xNXYtMTNoMTNjOC4yODQgMCAxNS02LjcxNiAxNS0xNXMtNi43MTYtMTUtMTUtMTV6IiBmaWxsPSIjZmVkODQzIi8+PHBhdGggZD0ibTIwNy4xIDM3MS4zMzYtMjIuMjYgMjIuMjYtNDUuMzItODcuNjIgMjIuMjYtMjIuMjZ6IiBmaWxsPSIjZmVkODQzIi8+PHBhdGggZD0ibTE4NC44NCAzOTMuNTk2IDIyLjI2LTIyLjI2LTIyLjY2LTQzLjgxLTIyLjI2NSAyMi4yNjV6IiBmaWxsPSIjZmFiZTJjIi8+PHBhdGggZD0ibTE1MC41MyA0MjcuOTA2LTIyLjI2IDIyLjI2LTQ1LjMyLTg3LjYyIDIyLjI2LTIyLjI2eiIgZmlsbD0iI2ZlZDg0MyIvPjxwYXRoIGQ9Im0xMjguMjcgNDUwLjE2NiAyMi4yNi0yMi4yNi0yMi42NTUtNDMuODE1LTIyLjI2IDIyLjI2eiIgZmlsbD0iI2ZhYmUyYyIvPjxjaXJjbGUgY3g9IjE1IiBjeT0iMTE5Ljk2OSIgZmlsbD0iIzVlZDhkMyIgcj0iMTUiLz48Y2lyY2xlIGN4PSIxMjgiIGN5PSIxOTkuOTY5IiBmaWxsPSIjZDU5OWVkIiByPSIxNSIvPjxjaXJjbGUgY3g9IjE5MiIgY3k9IjYzLjk2NCIgZmlsbD0iI2Y2NiIgcj0iMTUiLz48Y2lyY2xlIGN4PSIzMjgiIGN5PSI0MTUuOTY3IiBmaWxsPSIjMzFiZWJlIiByPSIxNSIvPjxjaXJjbGUgY3g9IjQ0MCIgY3k9IjMyNy45NjciIGZpbGw9IiNhZDc3ZTMiIHI9IjE0Ljk5OSIvPjwvZz48L3N2Zz4=)
-[![Sound Cloud](https://img.shields.io/badge/sound%20cloud-FF5500?style=for-the-badge&logo=soundcloud&logoColor=white)](https://soundcloud.com/champii)
+```haskell
+half_even = value ->
+    if value % 2 == 0
+    then Option::Some value / 2
+    else Option::None
 
-  
-</div>
+main = !->
+    Option::Some 84
+        >>= half_even
+        >>= half_even
+        |> (.println!)  // Some(21)
+```
 
-<br />
-<h2 align="left">Languages and Tools:</h2>
+### What I'm building now
 
-<p align="left"> <a href="https://angular.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/angularjs/angularjs-original-wordmark.svg" alt="angularjs" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://azure.microsoft.com/en-in/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/microsoft_azure/microsoft_azure-icon.svg" alt="azure" width="40" height="40"/> </a> <a href="https://www.gnu.org/software/bash/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" alt="bash" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.chartjs.org" target="_blank" rel="noreferrer"> <img src="https://www.chartjs.org/media/logo-title.svg" alt="chartjs" width="40" height="40"/> </a> <a href="https://circleci.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/circleci/circleci-icon.svg" alt="circleci" width="40" height="40"/> </a> <a href="https://offeescript.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/coffeescript/coffeescript-original-wordmark.svg" alt="coffeescript" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://www.elastic.co" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elastic/elastic-icon.svg" alt="elasticsearch" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://cloud.google.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/google_cloud/google_cloud-icon.svg" alt="gcp" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://golang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/go/go-original.svg" alt="go" width="40" height="40"/> </a> <a href="https://grafana.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/grafana/grafana-icon.svg" alt="grafana" width="40" height="40"/> </a> <a href="https://www.haskell.org/" target="_blank" rel="noreferrer"> <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Haskell-Logo.svg" alt="haskell" width="40" height="40"/> </a> <a href="https://jasmine.github.io/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jasmine/jasmine-icon.svg" alt="jasmine" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://jekyllrb.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/jekyllrb/jekyllrb-icon.svg" alt="jekyll" width="40" height="40"/> </a> <a href="https://www.elastic.co/kibana" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/elasticco_kibana/elasticco_kibana-icon.svg" alt="kibana" width="40" height="40"/> </a> <a href="https://kubernetes.io" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/kubernetes/kubernetes-icon.svg" alt="kubernetes" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://mochajs.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/mochajs/mochajs-icon.svg" alt="mocha" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://www.nginx.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nginx/nginx-original.svg" alt="nginx" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://postman.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="postman" width="40" height="40"/> </a> <a href="https://pugjs.org" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/pug.svg" alt="pug" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redis.io" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original-wordmark.svg" alt="redis" width="40" height="40"/> </a> <a href="https://www.rust-lang.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/rust/rust-plain.svg" alt="rust" width="40" height="40"/> </a> <a href="https://travis-ci.org" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/travis-ci/travis-ci-icon.svg" alt="travisci" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://www.vagrantup.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/vagrantup/vagrantup-icon.svg" alt="vagrant" width="40" height="40"/> </a> <a href="https://vuejs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/vuejs/vuejs-original-wordmark.svg" alt="vuejs" width="40" height="40"/> </a> <a href="https://webpack.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/d00d0969292a6569d45b06d3f350f463a0107b0d/icons/webpack/webpack-original-wordmark.svg" alt="webpack" width="40" height="40"/> </a> </p>
+- **A more expressive type system.** Connecting higher-kinded abstractions, ownership-aware closures, and trait inference so ordinary programs need fewer annotations; exploring scoped dynamic dispatch and existential packages on a dedicated development branch.
+- **A principled compiler–library boundary.** Moving operator meaning and primitive arithmetic policy into the standard library, backed by explicit compiler intrinsics; extending UTF-8 text handling and generic, short-circuiting traversal.
+- **A usable language toolchain.** Developing `rockup`, the project CLI, language server, editor integrations, and the language book alongside the compiler, with reusable compiled dependency artifacts.
 
-<br />
-<h2 align="left">About me:</h2>
+### The hard problems
 
-- 🔭 I’m currently working on [Rock](https://github.com/Champii/Rock), a native language build with Rust
+The challenge is making these features work **together**: preserving borrowing and cleanup through closures and erased types, keeping inference predictable across generic trait calls, and carrying the same semantics across separately compiled dependencies. Compiler correctness, useful diagnostics, and realistic library programs are central to that work.
 
-- 🌱 I’m currently learning **Compiler theory**
+Rock is still experimental. The published release and active development branches move at different speeds; the goal is a coherent, usable language, and the current work is about earning that reliability.
 
-- 🤝 I’m looking for help with [Comet](https://github.com/Champii/Comet), an Isomorphic reactive web framework for Rust
+**[Explore the compiler →](https://github.com/rock-lang-org/rock)** · [Read the book](https://rock-lang-org.github.io/Rock/) · [Try a release](https://github.com/rock-lang-org/rock/releases) · [Join the discussion](https://discord.gg/f6skPNB96J)
 
-- 💬 Ask me about **Meta prog, Rust, System Programming or anything else :)**
+## Selected projects
 
-- 📫 How to reach me **contact@champii.io**
+### [Rock ecosystem](https://github.com/rock-lang-org) · Taking the language beyond the compiler
 
-<br />
-<h2 align="left">Github profile summary:</h2>
+I'm building the surrounding tools and libraries that let Rock be used for real programs. [rock_http](https://github.com/rock-lang-org/rock_http) is a blocking HTTP/1.1 server library written in Rock, with bounded request parsing, response framing, and a thread-per-connection model built on safe standard-library APIs. It gives the language a concrete systems workload. [rock.nvim](https://github.com/rock-lang-org/rock.nvim), [vscode-rock](https://github.com/rock-lang-org/vscode-rock), and [tree-sitter-rock](https://github.com/rock-lang-org/tree-sitter-rock) bring the editing experience along with it.
 
-![Summary](https://raw.githubusercontent.com/Champii/Champii/develop/medias/profile_summary.png)
+### [Mutant](https://github.com/champii/Mutant) · Mutable storage on a decentralized network
 
-<br />
-<h2 align="left">More stats:</h2>
+A Rust storage system that turns the Autonomi network into a mutable key–value interface. Mutant combines encrypted private storage and public sharing with chunked, resumable uploads, storage-pad reuse, and synchronization. A persistent daemon manages network operations and background tasks, exposed through an async Rust API, a CLI, and a web workspace with file viewing, editing, and media streaming. The underlying problem: making distributed storage practical when transfers are interrupted, data changes, and network operations take time.
 
-<div>
-  <span>
-&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=champii&theme=dark&show_icons=true&include_all_commits=true&count_private=true" alt="champii" />
-  </span>
-  <span>
-<img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=champii&theme=dark&show_icons=true&include_all_commits=true&count_private=true" alt="champii" />
-  </span>
-    </div>
-<br />
+### [Asterinas](https://github.com/asterinas/asterinas) · Kernel development in Rust
 
-<div align="center"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img align="center" src="https://github-profile-trophy.vercel.app/?username=champii&theme=alduin&row=1&column=10&margin-w=10" alt="champii" /></a><div>
+My kernel work includes contributing load-average accounting and the corresponding `/proc/loadavg` interface to Asterinas, a Rust operating-system kernel with a Linux-compatible ABI. The implementation connects scheduler statistics to the proc filesystem, using fixed-point arithmetic and lazy calculation of load averages. It's systems work at a different layer: turning internal scheduling state into useful information for userspace while respecting kernel constraints. [View the contribution →](https://github.com/asterinas/asterinas/commit/4701eaf0cb2dcf8f8bd668e4d9ef6f1d64d6fca3)
 
-<br />
-<h2 align="left">Recent activity:</h2>  
+Earlier explorations include [Comet](https://github.com/champii/Comet), a reactive, isomorphic full-stack framework for Rust, and [reactive-postgres-rs](https://github.com/champii/reactive-postgres-rs), a reactive layer over PostgreSQL.
 
- 
-<!--START_SECTION:activity-->
-1. 🎉 Merged PR [#4](https://github.com/Champii/Comet/pull/4) in [Champii/Comet](https://github.com/Champii/Comet)
-2. 💪 Opened PR [#4](https://github.com/Champii/Comet/pull/4) in [Champii/Comet](https://github.com/Champii/Comet)
-3. 🎉 Merged PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
-4. 💪 Opened PR [#4](https://github.com/Champii/Champii/pull/4) in [Champii/Champii](https://github.com/Champii/Champii)
-5. 🎉 Merged PR [#3](https://github.com/Champii/Champii/pull/3) in [Champii/Champii](https://github.com/Champii/Champii)
-<!--END_SECTION:activity-->
+## GitHub, in numbers
 
+<p>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-stats.vercel.app/api?username=champii&amp;show_icons=true&amp;include_all_commits=true&amp;hide_rank=true&amp;card_width=400&amp;hide_border=true&amp;bg_color=0d1117&amp;title_color=d6a67b&amp;icon_color=d6a67b&amp;text_color=c9d1d9" />
+    <img src="https://github-readme-stats.vercel.app/api?username=champii&amp;show_icons=true&amp;include_all_commits=true&amp;hide_rank=true&amp;card_width=400&amp;hide_border=true&amp;title_color=895b36&amp;icon_color=895b36&amp;text_color=24292f" alt="Live GitHub stats: stars, commits, pull requests, issues, and repositories contributed to" width="400" />
+  </picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://github-readme-streak-stats.herokuapp.com/?user=champii&amp;hide_border=true&amp;background=0D1117&amp;ring=D6A67B&amp;fire=D6A67B&amp;currStreakLabel=D6A67B&amp;sideLabels=C9D1D9&amp;currStreakNum=C9D1D9&amp;sideNums=C9D1D9&amp;dates=8B949E&amp;stroke=30363D" />
+    <img src="https://github-readme-streak-stats.herokuapp.com/?user=champii&amp;hide_border=true&amp;ring=895B36&amp;fire=895B36&amp;currStreakLabel=895B36" alt="Live GitHub contribution totals, current streak, and longest streak" width="400" />
+  </picture>
+</p>
 
+---
+
+Interested in language design, compilers, or decentralized systems? **[Let's talk.](mailto:contact@champii.io)**
